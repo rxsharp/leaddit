@@ -22,32 +22,28 @@
 
     <!-- Add your site or application content here -->
     <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
+    <div class="headerTop">
+      <ul>
+        <li><a class="focus">Home</a></li>
+        <li><a href="#">ipsum</a></li>
+        <li><a href="#">ipsum</a></li>
+        <li><a href="#">ipsum</a></li>
+        <li><a href="#">ipsum</a></li>
+        <li><a href="#">ipsum</a></li>
+      </ul>
+    </div>
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-            <a class="navbar-brand" href="#/">leaddit</a>
-          </div>
-
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
-
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
+    <img src="images/leaddit-logo.png" width="150px" height="50px">
+    <div class="menuArea">
+                <ul class="mainMenu">
+              <li><a href="#/" class="focusMenu">Trending</a></li>
               <li><a ng-href="#/about">About</a></li>
               <li><a ng-href="#/my/api">API</a></li>
             </ul>
-          </div>
-        </div>
-      </div>
+    </div>
     </div>
 
+<!-- Main Content -->
     <div class="container">
     <div ng-view=""></div>
     </div>

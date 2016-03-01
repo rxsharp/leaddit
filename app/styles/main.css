@@ -5,6 +5,73 @@
   padding: 0.2em 0;
 }
 
+a:hover, a:focus {
+    color: #337ab7;
+}
+
+.headerTop {
+  background: #f0f0f0;
+    text-transform: uppercase;
+    border-bottom: 1px solid gray;
+    font-size: 90%;
+    height: 18px;
+    line-height: 18px;
+    white-space: nowrap;
+}
+
+.headerTop a {
+  color: black;
+  font-size: 1.1rem;
+}
+.headerTop a.focus {
+color: #ff4101;
+font-weight: bold;
+}
+
+
+
+.menuArea {
+  display: inline;
+      position: absolute;
+    bottom: 0px;
+}
+
+.menuArea a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menuArea a.focusMenu:hover {
+color: #ff4101;
+}
+
+.headerTop ul li {
+  list-style-type: none;
+  display: inline;
+}
+.menuArea ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+.mainMenu {
+  display: inline-block;
+      padding: 0px;
+    margin-bottom: 0px;
+}
+.focus, .focus:hover {
+  color: #ff4101;
+}
+
+.focusMenu {
+  color: #ff4101;
+  background: white;
+  padding: 3px 6px;
+  border-top: 1px solid #5f99cf;
+  border-left: 1px solid #5f99cf;
+  border-right: 1px solid #5f99cf;
+}
+
+
 body {
   padding: 0;
 }
@@ -19,8 +86,10 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+  border-bottom: 1px solid #5f99cf;
   margin-bottom: 10px;
+  background: #cee3f8;
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
