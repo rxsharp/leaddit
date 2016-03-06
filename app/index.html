@@ -45,12 +45,32 @@
 
 <!-- Main Content -->
     <div class="container">
-    <div ng-view=""></div>
+    <section>
+      <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+          <div ng-view=""></div>
+        </div>
+        <div class="col-md-2">
+          <a href="#"><button>
+            New link
+          </button></a><br>
+          <a href="#"><button>
+            New Post
+          </button></a>
+        </div>
+
+
+      </div>
+      </div> 
+    </section>
     </div>
 
     <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+      <div class="container-fluid">
+      <div class="footerWrap">
+      <p>Leaddit - A reddit-based clone app</p>
+      </div>
       </div>
     </div>
 
