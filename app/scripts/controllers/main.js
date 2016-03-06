@@ -16,4 +16,11 @@ angular.module('leadditApp')
   	{title: 'post 4', upvotes: 4},
   	{title: 'post 5', upvotes: 15}
     ];
+
+    $scope.addPost = function() {
+		if(!$scope.title || $scope.title === '') { alert("Can't be blank"); return; }
+    	$scope.posts.push({title: $scope.title, upvotes: 0});
+    	$scope.title = '';
+
+    };
   });
