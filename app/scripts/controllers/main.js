@@ -18,9 +18,16 @@ angular.module('leadditApp')
     ];
 
     $scope.addPost = function() {
-		if(!$scope.title || $scope.title === '') {return; }
-    	$scope.posts.push({title: $scope.title, upvotes: 0});
+		if(!$scope.title || $scope.link === '') {return; }
+    //Make only title required. Link is optional
+    	$scope.posts.push({
+        title: $scope.title,
+        link: $scope.link, 
+        upvotes: 0});
+    //Push title (required) and link (optional)
     	$scope.title = '';
+      $scope.link ='';
+    // Reset title and link to blank
     };
 
     $scope.incrementUpvotes = function(post) {
