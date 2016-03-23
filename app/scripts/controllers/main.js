@@ -8,7 +8,18 @@
  * Controller of the leadditApp
  */
 angular.module('leadditApp')
-  .controller('MainCtrl', function ($scope) {
+.factory('posts', [function(){
+var o = { posts: [] };
+return o;
+
+}])
+
+
+  .controller('MainCtrl', [
+    '$scope',
+    'posts', 
+    function ($scope, posts) {
+    $scope.posts = posts.posts;
     $scope.posts = [
     {title: 'post 1', upvotes: 1},
   	{title: 'post 2', upvotes: 12},
@@ -38,4 +49,4 @@ angular.module('leadditApp')
     post.upvotes -= 1;
     };
 
-  });
+  }]);
